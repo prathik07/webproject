@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" href="tabStyle.css">
+<link rel="stylesheet" href="topNavStyle.css">
+<title>The Performance Ratio Report Web Page 	</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <br>
+<div class="container">
+			<div class="col-md-3">
+				&emsp;<img src="D:\PrathikM\Avi-Solar-Logo-waterMark.png" width="100px" height="100px"/></div>
+				<div class="col-md-8">
+				<h2>&emsp; AVI SOLAR ENERGY PVT LTD <h5>&emsp;&emsp;&emsp;INSPIRED BY NATURE POWERED BY SUN</h5></h2>
+				</div>
+				</div> 
+<div class="container">
+&emsp;<div class="topnav">
+&emsp;
+  <a href="D:\PrathikM\Traniee-SPG\new_webpage\homepage.html">Home</a>
+  <a href="D:\PrathikM\Traniee-SPG\new_webpage\uploadFile.html">Upload data</a>
+  <a href="D:\PrathikM\Traniee-SPG\new_webpage\userInput.html">User Input data</a>
+  <a href="D:\PrathikM\Traniee-SPG\new_webpage\plantdetails.html">Plant Details</a>
+  <a class="active" href="D:\PrathikM\Traniee-SPG\new_webpage\UserLogin.html">Report Details</a>
+  <a href="D:\PrathikM\Traniee-SPG\new_webpage\About.html">About</a>
+	<a href="D:\PrathikM\Traniee-SPG\new_webpage\index.html" >Logout</a>
+</div>
+
+<div class="jumbotron" style="background-color:#fbc02d">
+<h2> &emsp; Temperature Performance Ratio Report  Form </h2>
+</div>
+
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'DGR')">Daily Generation </button>
+  <button class="tablinks" onclick="openTab(event, 'weather')">Weather Data</button>
+  <button class="tablinks" onclick="openTab(event, 'TPR')">Temperature Performation Ratio</button>
+</div>
+
+<div id="DGR" class="tabcontent">
+  <h3>Daily Generation</h3>
+  <p>	</p>
+  <form id="signin" name="signin" method="get" action="#" style="width:300px"></br>
+	<label> ABT Meter value </label>
+	<br><input type="text" id="abtMeter" class="form-control" /><br>
+	<label> Inverter Loss</label>
+	<br><input type="text" id="inverterLoss" class="form-control" /><br>
+	<label> Plant Capacity</label>
+	<br><input type="text" id="plantCapacity" class="form-control" /><br>
+	<label> Total Energy Generated</label>
+	<br><input type="text" id="energyGenerated" class="form-control" /><br>
+	</form>
+	
+</div>
+
+<div id="weather" class="tabcontent">
+  <h3>Weather Data</h3>
+  <p></p> 
+  <form style="width:300px"> </br>
+  <label> Product Mod Temperature Loss</label>
+	<br><input type="text" id="proModTemp" class="form-control" /><br>
+	<label> Insolation</label>
+	<br><input type="text" id="insolation" class="form-control" /><br>
+	<label> Value of K</label>
+	<br><input type="text" id="k" class="form-control" /><br>
+	<label> Value of J</label>
+	<br><input type="text" id="j" class="form-control" /><br>
+	</form>
+</div>
+
+<div id="TPR" class="tabcontent">
+  <h3>Temperature Performation Ratio</h3>
+  <p></p>
+  <form style="width:300px"> </br>
+  <label> Temperature Performance Ratio</label>
+	<br><input type="text" id="TempPR" class="form-control" /><br>
+	<label> Total Energy Generated</label>
+	<br><input type="text" id="tEG" class="form-control" /><br>
+	</form>
+</div>
+</div>
+
+
+
+
+<script>
+function openTab(evt, logName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace("active", "");
+    }
+    document.getElementById(logName).style.display = "block";
+    evt.currentTarget.className += "active";
+}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+<a href="D:\PrathikM\Traniee-SPG\new_webpage\index.html">Main Page</a>
+<a href="D:\PrathikM\Traniee-SPG\new_webpage\RegisterPage.html">Register Page</a>
+<a href="D:\PrathikM\Traniee-SPG\new_webpage\uploadFile.html">Upload page</a>
+</body>
+</html>
